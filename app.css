@@ -3,49 +3,30 @@
 }
 
 :root {
-
-}
-
-body {
-
-}
-
-img {
-
+    --black: #000;
+    --white: #FFF;
+    --dark-blue: #383e4c;
+    --silly-red: #852406;
+    --silly-green: #178a27;
+    --silly-blue: #1686c1;
+    --relative-gray: #666;
+    --black-blue: #262628;
+    --light-gray: #eaeaea;
 }
 
 .hero-img {
-
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
 
-.card-img {
-
+.hero-img > img {
+    width: 100%;
 }
 
-.card-img-fit {
+.hero-text {
+    position: absolute;
 
-}
-
-.card-img-adjust {
-
-}
-
-.row {
-
-}
-
-.col {
-
-}
-
-nav {
-
-}
-
-footer {
-
-}
-
-.button {
-    
 }
