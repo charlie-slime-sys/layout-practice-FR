@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
+    font-family: 'Open Sans';
     box-sizing: border-box;
 }
 
@@ -11,7 +14,39 @@
     --silly-blue: #1686c1;
     --relative-gray: #666;
     --black-blue: #262628;
-    --light-gray: #eaeaea;
+    --light-gray: #efefef;
+}
+
+nav {
+    display: flex;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1vw;
+}
+
+.button-selected {
+    display: flex;
+    background-color: #49505f;
+    text-decoration: none;
+    border-color: var(--relative-gray);
+    border: 1px solid var(--relative-gray);
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 30px;
+    color: white;
+}
+
+.button-nav {
+    display: flex;
+    text-decoration: none;
+    border-color: var(--relative-gray);
+    border: 1px solid var(--relative-gray);
+    margin: 1.5rem;
+    padding: 1rem;
+    font-size: 30px;
 }
 
 .hero-img {
@@ -27,6 +62,88 @@
 }
 
 .hero-text {
+    display: flex;
     position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    color: var(--white);
+    font-size: 75px;
+    text-shadow: #000 3px 3px;
+}
 
+.branding {
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    color: var(--white);
+}
+
+.parallax {
+    background-attachment: fixed;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2%;
+}
+
+.col {
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--light-gray);
+    flex-direction: column;
+}
+
+.col-one-third {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    width: calc(100% / 3.3);
+    margin: 5vw auto 0 auto;
+    background-color: var(--light-gray);
+}
+
+.col-one-third > h3 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    margin: 1vw;
+}
+
+.col-one-third > p {
+
+}
+
+.col-one-third > a {
+    
+}
+
+.col-one-fouth {
+    display: flex;
+    width: calc(100% / 4 -2%);
+    flex-flow: column nowrap;
+}
+
+.col-half {
+    display: flex;
+    width: 47%;
+    flex-flow: column;
+    align-content: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.col-full {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-content: center;
+    text-align: left;
 }
