@@ -84,6 +84,7 @@ nav {
 }
 
 .parallax {
+    display: flex;
     background-attachment: fixed;
 }
 
@@ -110,19 +111,55 @@ nav {
     background-color: var(--light-gray);
 }
 
+.col-one-third:nth-child(1) > a {
+    background-color: var(--silly-green);
+}
+
+.col-one-third:nth-child(2) > a {
+    background-color: var(--silly-blue);
+}
+
+.col-one-third:nth-child(3) > a {
+    background-color: var(--silly-red);
+}
+
+.col-one-third:nth-child(1) > h3 {
+    color: var(--silly-green);
+}
+
+.col-one-third:nth-child(2) > h3 {
+    color: var(--silly-blue);
+}
+
+.col-one-third:nth-child(3) > h3 {
+    color: var(--silly-red);
+}
+
 .col-one-third > h3 {
     display: flex;
     flex-wrap: wrap;
     font-size: 1vw;
     margin: 1vw;
+    justify-content: center;
 }
 
 .col-one-third > p {
-
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1vw;
+    margin: 1vw;
+    align-items: center;
+    text-align: left;
 }
 
 .col-one-third > a {
-    
+    align-self: center;
+    padding: 1vw;
+    color: var(--white);
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 2vw;
+    border-radius: 5px;
 }
 
 .col-one-fouth {
