@@ -49,6 +49,19 @@ nav {
     font-size: 30px;
 }
 
+.img-full {
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.img-full > img {
+    display: flex;
+    width: 100%;
+}
+
 .hero-img {
     display: flex;
     position: relative;
@@ -74,6 +87,16 @@ nav {
 }
 
 .branding {
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2vw;
+    color: var(--white);
+}
+
+.description {
     display: flex;
     position: absolute;
     top: 48%;
@@ -168,13 +191,41 @@ nav {
     flex-flow: column nowrap;
 }
 
-.col-half {
+.col-one-half {
     display: flex;
-    width: 47%;
-    flex-flow: column;
-    align-content: center;
-    text-align: center;
-    margin-top: 3rem;
+    flex-flow: column wrap;
+    width: calc(100% / 2.3);
+    background-color: var(--light-gray);
+    margin: 5vw auto;
+}
+
+.half-img {
+    display: flex;
+    width: 100%;
+}
+
+.col-one-half > h3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+.col-one-half > p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.col-one-half > a {
+    display: flex;
+    margin-left: 22vw;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    background-color: var(--white);
+    border: 1px solid var(--relative-gray);
+    border-radius: 10px;
+    padding: 1vw;
+    margin-right: 5vw;
 }
 
 .col-full {
@@ -184,3 +235,5 @@ nav {
     align-content: center;
     text-align: left;
 }
+
+
