@@ -1,8 +1,23 @@
+/* sooooo disorganized im soooo tired 
+sighs really loudly I need a cola........... 
+better yet...need some vanilla chai for that CAFFIENE boost yk urgg sooo tire */
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     font-family: 'Open Sans';
     box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    color: var(--relative-gray);
 }
 
 :root {
@@ -53,11 +68,37 @@ nav {
     display: flex;
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--white);
+    width: 100%;
+    margin: 0;
+}
+
+.img-full>img {
+    display: flex;
     width: 100%;
 }
 
-.img-full > img {
+.img-third {
+    display: flex;
+    width: 100%;
+}
+
+.img-fourth {
+    display: flex;
+    width: 100%;
+}
+
+.img-half {
+    display: flex;
+    width: 100%;
+}
+
+.big-img {
+    display: flex;
+    width: 100%;
+}
+
+.contact-img {
     display: flex;
     width: 100%;
 }
@@ -70,8 +111,14 @@ nav {
     width: 100%;
 }
 
-.hero-img > img {
+.hero-img>img {
     width: 100%;
+}
+
+.contact-title {
+    display: flex;
+    position: relative;
+    top: 50%;
 }
 
 .hero-text {
@@ -89,20 +136,30 @@ nav {
 .branding {
     display: flex;
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.2vw;
     color: var(--white);
 }
 
+.middle {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    text-shadow: var(--black) 3px 3px;
+}
+
 .description {
     display: flex;
     position: absolute;
-    top: 48%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.2vw;
+    font-size: 1.4vw;
     color: var(--white);
 }
 
@@ -125,6 +182,37 @@ nav {
     flex-direction: column;
 }
 
+.big-col {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    background-color: var(--light-gray);
+}
+
+.big-col>h3 {
+    margin-left: 1vw;
+    font-size: 2vw;
+}
+
+.big-col>p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.big-col>a {
+    display: flex;
+    background-color: var(--white);
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 12vw;
+    margin: 2vw;
+    border: 1px solid var(--relative-gray);
+    border-radius: 10px;
+}
+
 .col-one-third {
     display: flex;
     flex-flow: column wrap;
@@ -134,31 +222,31 @@ nav {
     background-color: var(--light-gray);
 }
 
-.col-one-third:nth-child(1) > a {
+.col-one-third:nth-child(1)>a {
     background-color: var(--silly-green);
 }
 
-.col-one-third:nth-child(2) > a {
+.col-one-third:nth-child(2)>a {
     background-color: var(--silly-blue);
 }
 
-.col-one-third:nth-child(3) > a {
+.col-one-third:nth-child(3)>a {
     background-color: var(--silly-red);
 }
 
-.col-one-third:nth-child(1) > h3 {
+.col-one-third:nth-child(1)>h3 {
     color: var(--silly-green);
 }
 
-.col-one-third:nth-child(2) > h3 {
+.col-one-third:nth-child(2)>h3 {
     color: var(--silly-blue);
 }
 
-.col-one-third:nth-child(3) > h3 {
+.col-one-third:nth-child(3)>h3 {
     color: var(--silly-red);
 }
 
-.col-one-third > h3 {
+.col-one-third>h3 {
     display: flex;
     flex-wrap: wrap;
     font-size: 1vw;
@@ -166,7 +254,7 @@ nav {
     justify-content: center;
 }
 
-.col-one-third > p {
+.col-one-third>p {
     display: flex;
     flex-wrap: wrap;
     font-size: 1vw;
@@ -175,7 +263,7 @@ nav {
     text-align: left;
 }
 
-.col-one-third > a {
+.col-one-third>a {
     align-self: center;
     padding: 1vw;
     color: var(--white);
@@ -185,10 +273,29 @@ nav {
     border-radius: 5px;
 }
 
-.col-one-fouth {
+.col-one-fourth {
     display: flex;
-    width: calc(100% / 4 -2%);
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 5vw;
+    width: calc(100% / 4.2);
+    background-color: var(--light-gray);
+    margin: 5vw auto 0 auto;
+}
+
+.col-one-fourth>p {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 0;
+}
+
+.col-one-fourth>a {
+    margin-bottom: 1vw;
+    background-color: var(--white);
+    padding: 1vw;
+    font-size: 1.5vw;
+    border: 1px solid var(--relative-gray);
+    border-radius: 10px;
 }
 
 .col-one-half {
@@ -199,24 +306,20 @@ nav {
     margin: 5vw auto;
 }
 
-.half-img {
-    display: flex;
-    width: 100%;
-}
-
-.col-one-half > h3 {
+.col-one-half>h3 {
     display: flex;
     justify-content: center;
     margin-left: 1vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    color: #666;
 }
 
-.col-one-half > p {
+.col-one-half>p {
     margin-left: 1vw;
     margin-right: 1vw;
 }
 
-.col-one-half > a {
+.col-one-half>a {
     display: flex;
     margin-left: 22vw;
     margin-bottom: 1vw;
@@ -227,13 +330,3 @@ nav {
     padding: 1vw;
     margin-right: 5vw;
 }
-
-.col-full {
-    display: flex;
-    width: 100%;
-    flex-flow: column;
-    align-content: center;
-    text-align: left;
-}
-
-
